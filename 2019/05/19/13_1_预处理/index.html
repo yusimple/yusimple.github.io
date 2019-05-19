@@ -10,6 +10,17 @@
 
     <!--Description-->
     
+        <meta name="description" content="13.1 预处理Course: C_learningLast Edited: May 17, 2019 1:54 PM章节: 13.1
+
+预处理的概念
+
+预处理是指在编译之前对源程序所做的处理称为预处理，指导编译器对源代码进行操作
+
+
+指示与语句的区别
+
+指示一般以‘#’号开头，是给编译器的命令(并">
+    
 
     <!--Author-->
     
@@ -40,7 +51,7 @@
 
     <!-- Title -->
     
-    <title>归档：2019 - 勇敢的小二子</title>
+    <title>勇敢的小二子</title>
 
     <!-- Tachyons Core CSS -->
     <link rel="stylesheet" href="//unpkg.com/tachyons/css/tachyons.min.css">
@@ -68,8 +79,6 @@
 <body>
 
 <!-- Main Content -->
-
-
 <!-- Banner -->
 <!-- Banner -->
 <div class="w-100 bg-1 ph5-ns ph3 text-light">
@@ -110,89 +119,141 @@
     <!-- Title -->
     <div class="w-100 mw8 center vh-40 dt">
         <div class="dtc v-mid white">
-            <h1 class="f1-l f2-m tc tc-m tl-ns">2019</h1>
-            <p class="f4 fw3 pab-100px tc tc-m tl-ns"></p>
+            <h1 class="f1-l f2-m tc tc-m tl-ns">Untitled</h1>
+            <p class="f4 fw3 pab-100px tc tc-m tl-ns">2019-05-19</p>
         </div>
     </div>
 
     <!-- Icon -->
     <div class="relative w-100 mw8 center white dn dn-m db-ns">
-        <i class="header-icon fa fa-folder-open"></i>
+        <i class="header-icon fa fa-file-text-o"></i>
     </div>
 </div>
 
+<!-- Content -->
 <div class="w-100 ph2 ph4-m ph5-l mv5 mv6-l">
     <div class="content">
         <div class="mw8 center">
-            
-                <a href="/2019/05/19/13_1_预处理/">
-    <div class="dt w-100 hover-border-main-color pointer pa3 border-color bl mv3">
-        <div class="dtc v-mid w-20 black-50">
-            
-                <span class="f4 fw3 lh-copy">May 2019</span> 
-            
+            <div class="cf">
+                <div class="fl w-100 w-70-l mw7 left fw3 lh-copy pr4-ns pr0-m post-content">
+                    <!-- Tags Vertical -->
+                    
+
+                    <!-- Main Post Content -->
+                    <h1 id="13-1-预处理"><a href="#13-1-预处理" class="headerlink" title="13.1 预处理"></a>13.1 预处理</h1><p>Course: C_learning<br>Last Edited: May 17, 2019 1:54 PM<br>章节: 13.1</p>
+<ol>
+<li><p><strong>预处理的概念</strong></p>
+<blockquote>
+<p><strong>预处理是指在编译之前对源程序所做的处理称为预处理，指导编译器对源代码进行操作</strong></p>
+</blockquote>
+</li>
+<li><p><strong>指示与语句的区别</strong></p>
+<ul>
+<li><p>指示一般以‘#’号开头，是给编译器的命令(并不产生二进制程序)</p>
+<pre><code>#define PI 3.14
+#include&lt;stdio.h&gt;
+</code></pre></li>
+<li><p>语句以分号为结尾，被编译器翻译为二进制程序</p>
+<pre><code>int i;//声明性语句
+y=x+1;//指令性语句
+</code></pre></li>
+</ul>
+</li>
+<li><p><strong>预处理1——文件包含</strong></p>
+<ul>
+<li><p>文件包含两种形式</p>
+<pre><code>#include&lt;stdio.h&gt;//.C语言自身库的头文件，搜索系统头文件所在的目录
+#include&quot;myheader.h&quot;//.C语言搜索当前目录，在搜索系统头文件目录
+</code></pre></li>
+</ul>
+</li>
+<li><p><strong>预处理2——条件编译</strong></p>
+<ul>
+<li><p>如果一个头文件被包含多次，可能会产生编译错误，此时需要条件编译语句</p>
+<pre><code>#ifndef MY_HEADER_H
+#define MY_HEADER_H
+#endif//栗子之一
+
+#define DEBUG 1//这里是总开关
+#if DEBUG
+        printf(&quot;&quot;);
+        printf(&quot;&quot;);
+#endif//栗子之二
+//总之一句话带#号的是给编译器看的
+# if defined(MAX)
+......
+#elif define(LINUX)
+......
+#else
+#error No operationg system specified
+#endif//栗子之三
+</code></pre></li>
+</ul>
+</li>
+</ol>
+
+                    
+                    <!-- Tags Bottom -->
+                    
+
+                    <!-- Comments -->
+                    
+
+
+
+                </div>
+                <div class="fl w-100 w-30-l center fw3 lh-copy pl4-ns tl black-50">
+                    
+                    <hr class="dn-l mw4 black-50 mt5">
+                    
+                    <!-- Widget 1: About -->
+                    <div class="mt5 mt0-l">
+    <article class="dt db-l mw8 mw8-m mw5-ns center ml0-l bg-white mv3">
+        <div class="dn dtc-m db-l v-mid tc pr4 pr0-l" style="min-width: 6rem;">
+            <img src="http://tachyons.io/img/avatar_1.jpg" class="mb4-l br-100 h3 w3 h4-l w4-l dib" title="余磊涛">
         </div>
-        <div class="dtc v-mid w-80 black-70">
-            <span class="f4 fw3 lh-copy">Untitled<span>
-        </span></span></div>
-    </div>
-</a>
-            
-                <a href="/2019/05/19/13-1-预处理-md/">
-    <div class="dt w-100 hover-border-main-color pointer pa3 border-color bl mv3">
-        <div class="dtc v-mid w-20 black-50">
-            
-                <span class="f4 fw3 lh-copy">May 2019</span> 
-            
+        <div class="dtc db-l v-mid lh-copy measure center f6 black-50 tj">
+            我叫余磊涛，电子科技到大学2016级学生，平时喜欢读书，倒腾计算机
         </div>
-        <div class="dtc v-mid w-80 black-70">
-            <span class="f4 fw3 lh-copy">13_1_预处理.md<span>
-        </span></span></div>
-    </div>
-</a>
-            
-                <a href="/2019/02/24/My-first-use-of-hexo/">
-    <div class="dt w-100 hover-border-main-color pointer pa3 border-color bl mv3">
-        <div class="dtc v-mid w-20 black-50">
-            
-                <span class="f4 fw3 lh-copy">Feb 2019</span> 
-            
-        </div>
-        <div class="dtc v-mid w-80 black-70">
-            <span class="f4 fw3 lh-copy">My_first_use_of_hexo<span>
-        </span></span></div>
-    </div>
-</a>
-            
-                <a href="/2019/01/28/My-Gallery/">
-    <div class="dt w-100 hover-border-main-color pointer pa3 border-color bl mv3">
-        <div class="dtc v-mid w-20 black-50">
-            
-                <span class="f4 fw3 lh-copy">Jan 2019</span> 
-            
-        </div>
-        <div class="dtc v-mid w-80 black-70">
-            <span class="f4 fw3 lh-copy"> My Gallery<span>
-        </span></span></div>
-    </div>
-</a>
-            
-                <a href="/2019/01/28/hello-world/">
-    <div class="dt w-100 hover-border-main-color pointer pa3 border-color bl mv3">
-        <div class="dtc v-mid w-20 black-50">
-            
-                <span class="f4 fw3 lh-copy">Jan 2019</span> 
-            
-        </div>
-        <div class="dtc v-mid w-80 black-70">
-            <span class="f4 fw3 lh-copy">Hello World<span>
-        </span></span></div>
-    </div>
-</a>
-            
+    </article>
+</div>
+
+                    <hr class="dn-l mw4 black-50 mt5">
+                    
+                    <!-- Widget 2: Categories -->
+                    
+
+                    <!-- Widget 3: Recent Posts -->
+                    <div class="mt5 tc tl-l">
+    <h3>近期文章</h3>
+    
+        <p>
+            <a href="/2019/05/19/13_1_预处理/">Untitled</a>
+        </p>
+    
+        <p>
+            <a href="/2019/05/19/13-1-预处理-md/">13_1_预处理.md</a>
+        </p>
+    
+        <p>
+            <a href="/2019/02/24/My-first-use-of-hexo/">My_first_use_of_hexo</a>
+        </p>
+    
+        <p>
+            <a href="/2019/01/28/hello-world/">Hello World</a>
+        </p>
+    
+        <p>
+            <a href="/2019/01/28/My-Gallery/"> My Gallery</a>
+        </p>
+    
+</div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
+
 
 <!-- Footer -->
 <div class="bg-1 ph2 ph5-ns pv5">
